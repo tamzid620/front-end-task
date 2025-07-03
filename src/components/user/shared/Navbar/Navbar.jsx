@@ -39,7 +39,7 @@ const Navbar = () => {
   }
 
     return (
-      <nav className=" bg-gray-900 text-[#D6FB00] border-b-2 border-[#D6FB00] py-3 z-50 relative">
+      <nav className=" bg-black text-[#D6FB00] border-b-2 border-[#D6FB00] py-3 z-50 relative">
       {/* navlist for large and medium device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
       <div className='lg:max-w-7xl md:max-w-3xl max-w-sm mx-auto'>
       <div className="lg:flex md:flex sm: hidden justify-between items-center  px-6 shadow-sm  relative z-50">
