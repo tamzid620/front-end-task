@@ -1,0 +1,12 @@
+.Bannerpolygen {
+  /* clip-path: polygon(0 41%, 100% 0%, 100% 61%, 0% 100%); */
+  clip-path: polygon(0 0, 100% 43%, 100% 100%, 0 58%);
+  background-color: #D6FB00;
+  position: absolute;
+  width: 350px;
+  height: 200px;
+}
+.Transpolygen {
+  clip-path: polygon(0 41%, 100% 0%, 100% 61%, 0% 100%);
+  background-color: transparent !important;
+}

@@ -1,27 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './Navbar.css' ;
 import fonts from '../../../config/fontsProvider';
-import navImage from "";
-import menuImage from "";
-import arrowImage from "";
+import navImage from "../../../../assets/icons/navImage.jpg";
+import menuImage from "../../../../assets/icons/white-menu.png";
+import arrowImage from "../../../../assets/icons/nu-arrow.png";
 import { TbArrowBadgeRightFilled } from "react-icons/tb";
 import Swal from "sweetalert2";
+import { Link } from 'react-router';
 
 const navlist = [
   {
-    path: "",
+    path: "/",
     name: "Home",
   },
   {
-    path: "",
-    name: "Classes",
-  },
-  {
-    path: "",
-    name: "Membership",
-  },
-  {
-    path: "",
-    name: "About",
+    path: "/cart",
+    name: "Cart",
   },
 ];
 
@@ -45,15 +39,16 @@ const Navbar = () => {
   }
 
     return (
-      <nav className=" bg-gray-900 text-[#D6FB00] py-1 z-50 relative">
+      <nav className=" bg-gray-900 text-[#D6FB00] shadow-[#D6FB00] py-1 z-50 relative">
       {/* navlist for large and medium device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
-      <div className="lg:flex md:flex sm: hidden justify-between items-center  px-6 shadow-sm shadow-[#D6FB00] relative z-50">
+      <div className='lg:max-w-7xl md:max-w-3xl max-w-sm mx-auto'>
+      <div className="lg:flex md:flex sm: hidden justify-between items-center  px-6 shadow-sm  relative z-50">
         {/* image section  */}
         <div>
-          <Image src={navImage} alt="navbar image" className="w-[90px]" />
+          <img src={navImage} alt="navbar image" className="w-[90px]" />
         </div>
         {/* ul section  */}
-        <ul className={`${nunito.className} flex gap-8  `}>
+        <ul style={{ fontFamily: fonts.nunito }} className=" flex gap-8 ">
           {navlist.map(({ path, name }, index) => (
             <Link key={index} href={path} className="relative group">
               <li onClick={handleInProgress} className=" uppercase font-extrabold text-sm relative">
@@ -65,23 +60,24 @@ const Navbar = () => {
         </ul>
         {/* join button  */}
         <button className="uppercase text-white font-extrabold text-sm flex items-center">
-          <Image src={arrowImage} alt="navbar image" className="w-[30px]" />
+          <img src={arrowImage} alt="navbar image" className="w-[30px]" />
           <h1 onClick={handleInProgress} className="relative group">
             <span className="relative">Join</span>
             <hr className="navHrPolygen absolute top-5 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
           </h1>
         </button>
       </div>
+      </div>
       {/* navlist for small device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/}
       <div className="md:hidden sm: block ">
         <div className="flex justify-between items-center mx-6 py-2">
           {/* image section  */}
           <div>
-            <Image src={navImage} alt="navbar image" className="w-[50px]" />
+            <img src={navImage} alt="navbar image" className="w-[50px]" />
           </div>
           {/* menubar section  */}
           <div>
-            <Image
+            <img
               onClick={handleMenu}
               src={menuImage}
               alt="navbar image"
