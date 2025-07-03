@@ -86,7 +86,7 @@ const ViewCart = () => {
                     <input
                       value={quantity}
                       type="number"
-                      className="bg-white text-black w-6"
+                      className="bg-white text-black w-6 "
                       readOnly
                     />
                     <img

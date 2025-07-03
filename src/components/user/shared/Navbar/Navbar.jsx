@@ -140,18 +140,35 @@ const Navbar = () => {
             >
               open modal
             </button>
-            <dialog id="my_modal_3" className="modal">
-              <div className="modal-box">
+            <dialog id="my_modal_3" className="modal ">
+              <div className="modal-box bg-white text-black">
                 <form method="dialog">
                   {/* if there is a button in form, it will close the modal */}
                   <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                     ✕
                   </button>
                 </form>
-                <h3 className="font-bold text-lg">Hello!</h3>
-                <p className="py-4">
-                  Press ESC key or click on ✕ button to close
-                </p>
+                <h1 className="text-center font-bold">Enter Your Information</h1>
+                <div className="py-5">
+                  {/* name input  */}
+                  <div className="mb-2">
+                    <label className="font-bold">Name:</label> <br />
+                    <input required type="text" name="" id="" className="border-2 w-full h-8 rounded-sm" />
+                  </div>
+                  {/* email input  */}
+                  <div className="mb-2">
+                    <label className="font-bold">Email:</label> <br />
+                    <input required type="email" name="" id="" className="border-2 w-full h-8 rounded-sm" />
+                  </div>
+                  {/* address input  */}
+                  <div className="mb-2">
+                    <label className="font-bold">Address:</label> <br />
+                    <input required type="text" name="" id="" className="border-2 w-full h-8 rounded-sm" />
+                  </div>
+                  <div className="flex justify-center mt-4">
+                    <button className="bg-gray-500 hover:bg-gray-700 font-bold text-white uppercase px-5 py-2">Submit</button>
+                  </div>
+                </div>
               </div>
             </dialog>
           </div>
