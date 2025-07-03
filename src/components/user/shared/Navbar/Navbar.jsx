@@ -39,13 +39,13 @@ const Navbar = () => {
   }
 
     return (
-      <nav className=" bg-gray-900 text-[#D6FB00] shadow-[#D6FB00] py-1 z-50 relative">
+      <nav className=" bg-gray-900 text-[#D6FB00] border-b-2 border-[#D6FB00] py-3 z-50 relative">
       {/* navlist for large and medium device >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
       <div className='lg:max-w-7xl md:max-w-3xl max-w-sm mx-auto'>
       <div className="lg:flex md:flex sm: hidden justify-between items-center  px-6 shadow-sm  relative z-50">
         {/* image section  */}
         <div>
-          <img src={navImage} alt="navbar image" className="w-[90px]" />
+          <img src={navImage} alt="navbar image" className="w-[70px]" />
         </div>
         {/* ul section  */}
         <ul style={{ fontFamily: fonts.nunito }} className=" flex gap-8 ">
