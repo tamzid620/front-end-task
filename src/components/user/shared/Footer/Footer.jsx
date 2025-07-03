@@ -15,7 +15,7 @@ const Footer = () => {
                     <img className='w-[150px] drop-shadow-lg' src={footerimg} alt="" />
                     </div>
                     <p className="font-bold text-lg">
-                        Azraelle language club <br />providing an exceptional experience since 2023
+                        Irony Fit Club <br />providing an exceptional experience since 2025
                     </p>
                     <p >Copyright © 2023 - All right reserved</p>
                 </div>

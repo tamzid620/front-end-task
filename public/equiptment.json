@@ -1,0 +1,50 @@
+[
+  {
+    "id": "1",
+    "images": "https://i.postimg.cc/Gh0dZGKP/eq-1.jpg",
+    "title": "Adjustable Dumbbell Set 20KG",
+    "price": 4999,
+    "description": "Durable and space-saving adjustable dumbbell set, perfect for full-body workouts at home or the gym.",
+    "rating": 4.8
+  },
+  {
+    "id": "2",
+    "images": "https://i.postimg.cc/dtKcWvQ4/eq-2.jpg",
+    "title": "Foldable Motorized Treadmill",
+    "price": 38999,
+    "description": "Compact and foldable treadmill with LCD display, perfect for cardio training at home.",
+    "rating": 4.6
+  },
+  {
+    "id": "3",
+    "images": "https://i.postimg.cc/rwf6Fr1P/eq-3.jpg",
+    "title": "Multi-Function Bench Press",
+    "price": 9999,
+    "description": "Sturdy bench press with adjustable angles for chest, shoulder, and triceps workouts.",
+    "rating": 4.5
+  },
+  {
+    "id": "4",
+    "images": "https://i.postimg.cc/8z5K4nvZ/eq-4.jpg",
+    "title": "Vinyl Coated Kettlebell 16KG",
+    "price": 2399,
+    "description": "Ergonomic vinyl-coated kettlebell for strength, cardio, and endurance training.",
+    "rating": 4.7
+  },
+  {
+    "id": "5",
+    "images": "https://i.postimg.cc/7PnKkyMB/eq-5.jpg",
+    "title": "Wall Mounted Pull-Up Bar",
+    "price": 2999,
+    "description": "Heavy-duty pull-up bar for upper body training. Easy to install on any solid wall.",
+    "rating": 4.4
+  },
+  {
+    "id": "6",
+    "images": "https://i.postimg.cc/526gLQcG/eq-6.png",
+    "title": "Resistance Band Set (5 Pieces)",
+    "price": 1299,
+    "description": "Color-coded resistance bands for strength training, mobility, and rehab exercises.",
+    "rating": 4.9
+  }
+]
