@@ -29,7 +29,7 @@ const Banner = () => {
       {/* polygen div >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */}
 
       <div className="absolute
-      lg:top-[40%] lg:left-[41%] 
+      lg:top-[40%] lg:left-[39%] 
       md:top-[20%] md:left-[28%] 
       sm: top-[20%] sm: left-[10%] 
       text-gray-900
