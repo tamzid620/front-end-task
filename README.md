@@ -8,10 +8,10 @@
     • axios, daisyUi, tailwind Css, react icon, sweet alert2,
 
 ✅ FrontEnd Link:
-    • [](https://front-end-task-sage.vercel.app/)
+    •https://front-end-task-sage.vercel.app/
 
 ✅ Backend Link:
-    • [](https://back-end-task-ivm7.onrender.com/)
+    • https://back-end-task-ivm7.onrender.com/
 
 ✅ In this website
     • Navbar has Home and Cart Link, 
