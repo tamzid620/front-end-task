@@ -166,7 +166,9 @@ const Navbar = () => {
                     <input required type="text" name="" id="" className="border-2 w-full h-8 rounded-sm" />
                   </div>
                   <div className="flex justify-center mt-4">
+                    <Link to="/paymentGateway">
                     <button className="bg-gray-500 hover:bg-gray-700 font-bold text-white uppercase px-5 py-2">Submit</button>
+                    </Link>
                   </div>
                 </div>
               </div>
