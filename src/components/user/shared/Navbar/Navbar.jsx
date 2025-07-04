@@ -138,7 +138,7 @@ const Navbar = () => {
               className="absolute bottom-5 w-[360px] ms-2 bg-[#D6FB00] hover:bg-[#88ff76] py-2 text-black font-bold text-center uppercase"
               onClick={() => document.getElementById("my_modal_3").showModal()}
             >
-              open modal
+              Checkout
             </button>
             <dialog id="my_modal_3" className="modal ">
               <div className="modal-box bg-white text-black">
