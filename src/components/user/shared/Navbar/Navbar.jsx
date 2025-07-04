@@ -16,10 +16,6 @@ const navlist = [
     path: "/",
     name: "Home",
   },
-  {
-    path: "/cart",
-    name: "Cart",
-  },
 ];
 
 const Navbar = () => {
