@@ -3,26 +3,26 @@ import React, { useEffect, useState } from "react";
 import { baseUrl } from "../../../config/config";
 import { useParams } from "react-router";
 import fonts from "../../../config/fontsProvider";
-import CompoLoading from "../../../config/compoLoading";
+import SharedLoading from "../SharedLoading/SharedLoading";
 
 const OurProdctsDetails = () => {
   const { equipmentId } = useParams();
   const [isLoading, setIsLoading] = useState(false);
   const [equipment, setEquipments] = useState(null);
 
-useEffect(() => {
-  setIsLoading(true);
-  axios
-    .get(baseUrl(`all-equipments/${equipmentId}`))
-    .then((res) => {
-      setEquipments(res.data);
-    })
-    .catch((error) => {
-      console.error(error);
-    })
-      setIsLoading(false);
-}, [equipmentId]);
-
+  useEffect(() => {
+    setIsLoading(true);
+    axios
+      .get(baseUrl(`all-equipments/${equipmentId}`))
+      .then((res) => {
+        setEquipments(res.data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.log(error);
+        setIsLoading(false);
+      });
+  }, [equipmentId]);
 
   return (
     <div>
@@ -36,8 +36,8 @@ useEffect(() => {
               {equipment?.title}
             </h1>
             {isLoading ? (
-              <CompoLoading/>
-            ) : (
+              <SharedLoading />
+            ) : equipment ? (
               <div className="grid grid-cols-12 gap-4 ">
                 <div className="col-span-12 md:col-span-5">
                   <img
@@ -73,7 +73,7 @@ useEffect(() => {
                   </p>
                 </div>
               </div>
-            )}
+            ) : null}
           </div>
         )}
       </div>
